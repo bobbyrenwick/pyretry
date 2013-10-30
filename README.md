@@ -28,7 +28,6 @@ been made (0 indexed):
 ```python
 retry_with_constant_timeout = retry(pymongo.errors.AutoReconnect, timeout=0.5)
 
-
 @retry_with_constant_timeout
 def some_function:
     ...
