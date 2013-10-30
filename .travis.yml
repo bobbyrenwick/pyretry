@@ -1,5 +1,8 @@
 language: python
 python:
     - "2.7"
-install: "pip install -r requirements.pip"
-script: nosetests
+install:
+    - "pip install -r requirements.pip"
+    - "pip install coveralls"
+script: nosetests --with-coverage --cover-package=pyretry
+after_success: coveralls
