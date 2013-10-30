@@ -1,6 +1,7 @@
 # Pyretry
 
 [![PyPI version](https://badge.fury.io/py/pyretry.png)](http://badge.fury.io/py/pyretry)
+[![Coverage Status](https://coveralls.io/repos/bobbyrenwick/pyretry/badge.png)](https://coveralls.io/r/bobbyrenwick/pyretry)
 [![Build Status](https://travis-ci.org/bobbyrenwick/pyretry.png)](https://travis-ci.org/bobbyrenwick/pyretry)
 
 Are you tired of rewriting the same code for catching exceptions and then retrying the original code? pyretry allows you to separate your retry logic from your business logic by allowing you to specify which exceptions you would like to retry on, the number of times to retry, how long to timeout between retries and provides a hook on each retry for you to log or do whatever you will with that information.
