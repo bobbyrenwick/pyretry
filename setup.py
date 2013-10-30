@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='pyretry',
-    version="0.1",
+    version="0.9",
     description='Separate your retry logic from your buxiness lgic',
     author='Bob Renwick',
     author_email='bob.renwick@gmail.com',
