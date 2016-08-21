@@ -8,5 +8,5 @@ python:
 install:
     - "pip install -r requirements.pip"
     - "pip install coveralls"
-script: nosetests --with-coverage --cover-package=pyretry
+script: nose2 --with-coverage --cover-package=pyretry
 after_success: coveralls
