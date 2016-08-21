@@ -9,9 +9,6 @@ setup(
     author_email='bob.renwick@gmail.com',
     url='https://github.com/bobbyrenwick/pyretry',
     packages=['pyretry'],
-    tests_require=[
-        'mock>=1.0,<1.1',
-    ],
     classifiers=(
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
