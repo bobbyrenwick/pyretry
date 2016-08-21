@@ -111,7 +111,7 @@ class TestPyretry(unittest.TestCase):
         self.assertRaises(RetryableError, always_fails)
         self.assertEqual(self.counter, 6)
 
-        expected = [mock.call(i + 1) for i in xrange(5)]
+        expected = [mock.call(i + 1) for i in range(5)]
         self.assertEqual(timeout_calc.call_args_list, expected)
 
     def test_hook_is_called(self):
