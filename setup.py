@@ -1,9 +1,10 @@
 from distutils.core import setup
 
+
 setup(
     name='pyretry',
     version="0.9",
-    description='Separate your retry logic from your buxiness lgic',
+    description='Separate your retry logic from your business logic',
     author='Bob Renwick',
     author_email='bob.renwick@gmail.com',
     url='https://github.com/bobbyrenwick/pyretry',
