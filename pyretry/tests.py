@@ -1,16 +1,21 @@
 import unittest
+
 import mock
 
-from pyretry import retry
+from .pyretry import retry
+
 
 class RetryableError(Exception):
     pass
 
+
 class DifferentRetryableError(Exception):
     pass
 
+
 class UnretryableError(Exception):
     pass
+
 
 class TestPyretry(unittest.TestCase):
 
