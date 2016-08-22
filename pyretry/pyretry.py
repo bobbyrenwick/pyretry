@@ -1,5 +1,7 @@
-from functools import wraps
 import time
+
+from functools import wraps
+
 
 def retry(exceptions_to_catch, num_retries=5, timeout=0, hook=None):
     def decorator(func):
@@ -7,7 +9,7 @@ def retry(exceptions_to_catch, num_retries=5, timeout=0, hook=None):
         def wrapper(*args, **kwargs):
             timeout_is_func = hasattr(timeout, '__call__')
 
-            for i in xrange(num_retries + 1):
+            for i in range(num_retries + 1):
                 attempt_number = i + 1
 
                 try:

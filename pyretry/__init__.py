@@ -1,1 +1,1 @@
-from pyretry import retry
+from .pyretry import retry  # noqa
